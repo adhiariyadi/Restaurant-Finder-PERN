@@ -32,14 +32,14 @@ cd Restaurant-Finder-PERN
 
 2. **Jalankan Server Restaurant Finder**
 
-- **Instalasi website**
+- _Instalasi website_
 
 ```bash
 cd server
 npm install
 ```
 
-- **Membuat Database Dan Table**
+- _Membuat Database Dan Table_
 
 ```bash
 // membuat database restaurant
@@ -63,7 +63,7 @@ CREATE TABLE reviews (
 );
 ```
 
-- **Buka `.env` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
+- _Buka `.env` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai_
 
 ```bash
 PORT=3005
@@ -74,7 +74,7 @@ PGPASSWORD="root"
 PGPORT=5432
 ```
 
-- **Jalankan website**
+- _Jalankan website_
 
 ```bash
 npm start
@@ -82,14 +82,14 @@ npm start
 
 2. **Jalankan Client Restaurant Finder**
 
-- **Instalasi website**
+- _Instalasi website_
 
 ```bash
 cd client
 npm install
 ```
 
-- **Jalankan website**
+- _Jalankan website_
 
 ```bash
 npm start
