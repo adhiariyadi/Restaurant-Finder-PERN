@@ -1,0 +1,111 @@
+<h1 align="center">Selamat datang di Restaurant Finder! 👋</h1>
+
+## Apa itu Restaurant Finder?
+
+Web Restaurant Finder yang dibuat oleh <a href="https://github.com/adhiariyadi"> Adhi Ariyadi </a>. **Restaurant Finder adalah Website untuk mencari restaurant dan reviewnya melalui website dengan mudah.**
+
+## Fitur apa saja yang tersedia di Restaurant Finder?
+
+- Houses with beauty backyard (Landing Page)
+- Hotels with large living room (Landing Page)
+- Apartments with kitchen set (Landing Page)
+- Feature (Detail Page)
+- Activity (Detail Page)
+- Booking Page
+
+## Release Date
+
+**Release date : 17 Aug 2020**
+
+> Restaurant Finder merupakan project open source yang dibuat oleh Adhi Ariyadi. Kalian dapat download/fork/clone. Cukup beri stars di project ini agar memberiku semangat. Terima kasih!
+
+---
+
+## Install
+
+1. **Clone Repository**
+
+```bash
+git clone https://github.com/adhiariyadi/Restaurant-Finder-PERN.git
+cd Restaurant-Finder-PERN
+```
+
+2. **Jalankan Server Restaurant Finder**
+
+- **Instalasi website**
+
+```bash
+cd server
+npm install
+```
+
+- **Membuat Database Dan Table**
+
+```bash
+// membuat database restaurant
+create database db_restaurant
+
+// membuat tale restaurants
+CREATE TABLE restaurants (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    location TEXT NOT NULL,
+    price INT NOT NULL CHECK(price >= 1 and price <= 5)
+);
+
+// membuat tale reviews
+CREATE TABLE reviews (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    restaurant_id BIGINT NOT NULL REFERENCES restaurants(id),
+    name VARCHAR(50) NOT NULL,
+    review TEXT NOT NULL,
+    rating INT NOT NULL CHECK(rating >= 1 and rating <= 5)
+);
+```
+
+- **Buka `.env` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
+
+```bash
+PORT=3005
+PGHOST="localhost"
+PGUSER="postgres"
+PGDATABASE="db_restaurant"
+PGPASSWORD="root"
+PGPORT=5432
+```
+
+- **Jalankan website**
+
+```bash
+npm start
+```
+
+2. **Jalankan Client Restaurant Finder**
+
+- **Instalasi website**
+
+```bash
+cd client
+npm install
+```
+
+- **Jalankan website**
+
+```bash
+npm start
+```
+
+## Author
+
+- Facebook : <a href="https://web.facebook.com/adhiariyadi.me/"> Adhi Ariyadi</a>
+- LinkedIn : <a href="https://www.linkedin.com/in/adhiariyadi/"> Adhi Ariyadi</a>
+
+## Contributing
+
+Contributions, issues and feature requests di persilahkan.
+Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Berhubung Project ini saya sudah selesaikan sendiri, namun banyak fitur yang kalian dapat tambahkan silahkan berkontribusi yaa!**
+
+## License
+
+- Copyright © 2020 Adhi Ariyadi.
+- **Restaurant Finder is open-sourced software licensed under the MIT license.**
