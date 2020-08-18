@@ -6,12 +6,13 @@ Web Restaurant Finder yang dibuat oleh <a href="https://github.com/adhiariyadi">
 
 ## Fitur apa saja yang tersedia di Restaurant Finder?
 
-- Houses with beauty backyard (Landing Page)
-- Hotels with large living room (Landing Page)
-- Apartments with kitchen set (Landing Page)
-- Feature (Detail Page)
-- Activity (Detail Page)
-- Booking Page
+- Show all restaurans
+- Add restaurant
+- Update restaurant
+- Delete restaurant
+- Detail restaurant
+- Show reviews
+- Add review
 
 ## Release Date
 
