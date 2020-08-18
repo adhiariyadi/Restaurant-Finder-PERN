@@ -39,6 +39,8 @@ cd server
 npm install
 ```
 
+- _Install <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">PostgreSQL</a>_
+
 - _Membuat Database Dan Table_
 
 ```bash
