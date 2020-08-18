@@ -12,9 +12,9 @@ const EditRestaurant = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await Api.get(`/${id}`);
-      setName(response.data.data.name);
-      setLocation(response.data.data.location);
-      setPrice(response.data.data.price);
+      setName(response.data.data.restaurant.name);
+      setLocation(response.data.data.restaurant.location);
+      setPrice(response.data.data.restaurant.price);
     };
 
     fetchData();

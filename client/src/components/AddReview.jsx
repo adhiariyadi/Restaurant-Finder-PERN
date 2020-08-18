@@ -26,6 +26,11 @@ const AddReview = () => {
     }
   };
 
+  const buttonBack = (e) => {
+    e.stopPropagation();
+    history.push("/");
+  };
+
   return (
     <div className="mb-2">
       <form action="">
@@ -70,6 +75,12 @@ const AddReview = () => {
             className="form-control"
           ></textarea>
         </div>
+        <button
+          onClick={(e) => buttonBack(e)}
+          className="btn btn-outline-primary mr-3"
+        >
+          <i class="fas fa-arrow-left mr-1"></i> Add Review
+        </button>
         <button type="submit" onClick={submit} className="btn btn-primary">
           <i class="fas fa-plus mr-1"></i> Add Review
         </button>
