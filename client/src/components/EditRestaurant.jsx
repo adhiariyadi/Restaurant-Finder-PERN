@@ -30,6 +30,11 @@ const EditRestaurant = () => {
     history.push("/");
   };
 
+  const buttonBack = (e) => {
+    e.stopPropagation();
+    history.push("/");
+  };
+
   return (
     <div>
       <form action="">
@@ -71,8 +76,14 @@ const EditRestaurant = () => {
             <option value="5">$$$$$</option>
           </select>
         </div>
+        <button
+          onClick={(e) => buttonBack(e)}
+          className="btn btn-outline-primary mr-3"
+        >
+          <i class="fas fa-arrow-left mr-1"></i> Back
+        </button>
         <button type="submit" onClick={submit} className="btn btn-primary">
-          Submit
+          <i class="fas fa-sync-alt mr-1"></i> Update
         </button>
       </form>
     </div>

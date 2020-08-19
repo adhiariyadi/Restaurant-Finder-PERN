@@ -79,7 +79,7 @@ const AddReview = () => {
           onClick={(e) => buttonBack(e)}
           className="btn btn-outline-primary mr-3"
         >
-          <i class="fas fa-arrow-left mr-1"></i> Add Review
+          <i class="fas fa-arrow-left mr-1"></i> Back
         </button>
         <button type="submit" onClick={submit} className="btn btn-primary">
           <i class="fas fa-plus mr-1"></i> Add Review
